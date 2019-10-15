@@ -10,19 +10,38 @@ package Proyecto1;
  * @author master
  */
 public class Interes {
-    private float vp,vf,i;
-    private int n;
-    public Interes(float vp,float vf,float i, int n){
-        this.vp=vp;
-        this.vf=vf;
-        this.i=i;
-        this.n=n;
+    
+    protected double variables[] = new double[4];
+    protected String nvariables[]={"valor presente","valor futuro","tasa de interes en decimal","numero de periodos"};
+    
+    public Interes(double[] variables){
+        this.variables=variables;
     }
     
-    public void log(){
-        System.out.println("VP: "+vp);
-        System.out.println("VF: "+vf);
-        System.out.println("I: "+i);
-        System.out.println("N: "+n);
+    public double CalculaVP(){
+        double resultado=0.0;
+        return resultado;
     }
+    
+    public double CalculaVF(){
+        double resultado=0.0;
+        return resultado;
+    }
+    
+    public double CalculaI(){
+        double resultado=0.0;
+        return resultado;
+    }
+    
+    public double CalculaN(){
+        double resultado=0.0;
+        return resultado;
+    }
+    
+    public void ImprimeVariables(){
+        for (int i = 0; i < 4; i++) {
+            System.out.println(this.nvariables[i]+": "+this.variables[i]);
+        }
+    }
+    
 }
