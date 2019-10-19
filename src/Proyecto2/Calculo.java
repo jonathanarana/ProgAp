@@ -10,7 +10,5 @@ package Proyecto2;
  * @author master
  */
 abstract class  Calculo {
-    
-    
     abstract String calcular(String a);
 }

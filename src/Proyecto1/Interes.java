@@ -18,6 +18,10 @@ public class Interes {
         this.variables=variables;
     }
     
+    public void SetVariable(int variable, double valor){
+        variables[variable]=valor;
+    }
+    
     public double CalculaVP(){
         double resultado=0.0;
         return resultado;
